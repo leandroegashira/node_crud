@@ -12,3 +12,13 @@ server.get('/users', (req, res) => {
 
     return res.json(users)
 })
+
+
+// criando usuário
+server.post('/users', (req, res) => {
+    const {name} = req.body
+
+    users.push(name)
+
+    return res.json(users)
+})
