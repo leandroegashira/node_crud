@@ -34,3 +34,12 @@ server.put('/users/:index', (req, res) => {
     return res.json(users)
 })
 
+
+// deletar usuário
+server.put('/users/:index', (req, res) => {
+
+    users.splice(index, 1)
+    
+})
+
+server.listen(3000)
